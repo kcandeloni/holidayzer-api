@@ -1,16 +1,18 @@
 package com.holidayzer.api;
 
-public class Holiday {
-    private String date;
-    private String description;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-    Holiday(String date, String description){
-        this.date = date;
-        this.description = description;    
-    }
+@Data                     // Getters e setters
+@NoArgsConstructor        // Construtor sem argumentos
+@AllArgsConstructor       // Construtor com todos os argumentos
+public class Holiday {
+    String dateHoliday;
+    String description;
 
     String getDate(){
-        return date;
+        return dateHoliday;
     }
 
     String getDesciption(){

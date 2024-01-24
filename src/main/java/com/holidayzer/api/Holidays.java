@@ -3,11 +3,15 @@ package com.holidayzer.api;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Holidays {
-    private List<Holiday> holidays = new ArrayList<>();
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-    Holidays(){
-    }
+@Data                     // Getters e setters
+@NoArgsConstructor        // Construtor sem argumentos
+@AllArgsConstructor       // Construtor com todos os argumentos
+public class Holidays{
+    List<Holiday> holidays = new ArrayList<>();
 
     void setHoliday(Holiday holiday) {
         this.holidays.add(holiday);

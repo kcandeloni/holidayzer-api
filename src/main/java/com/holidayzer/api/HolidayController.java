@@ -2,6 +2,7 @@ package com.holidayzer.api;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
@@ -16,6 +17,7 @@ public class HolidayController {
         holidays.setHoliday(new Holiday("29-03-2024", "Sexta-feira Santa"));
         holidays.setHoliday(new Holiday("21-04-2024", "Tiradentes"));
         holidays.setHoliday(new Holiday("01-05-2024", "Dia do Trabalho"));
+        holidays.setHoliday(new Holiday("08-02-2024", "Niver do Mike"));
     }
 
     @GetMapping()
